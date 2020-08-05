@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>plusWeek2</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/1e3f71204e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form id="search-form">
+            <div class="row">
+                <div class="col-6">
+                    <input type="text" placeholder="Enter location" autofocus="on" autocomplete="off"
+                        id="search-input" />
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-success" id="button-search">
+                        Search
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-warning" id="current">Current📍</button>
+                </div>
+            </div>
+        </form>
+        <h1 id="city">
+            London
+        </h1>
+        <h2 id="time">
+            Friday 20:55
+        </h2>
+        <h2 id="weather-description">
+            Mostly cloudy
+        </h2>
+        <h2>
+            <span id="celsius">19</span>
+            <a href="#" id="c-link">°C</a>|<a href="#" id="link">°F</a>⛅
+        </h2>
+        <div class="row days"></div>
+        <div class="col-2">
+            Sunday <br />
+            <i class="fas fa-cloud"></i><br />
+            15°C
+        </div>
+        <div class="col-2">
+            Monday <br />
+            <i class="fas fa-cloud"></i><br />
+            16°C
+        </div>
+        <div class="col-2">
+            Tuesday <br />
+            <i class="fas fa-cloud-sun-rain"></i><br />
+            14°C
+        </div>
+        <div class="col-2">
+            Wednesday <br />
+            <i class="fas fa-cloud-rain"></i><br />
+            13°C
+        </div>
+        <div class="col-2">
+            Thursday <br />
+            <i class="fas fa-cloud-rain"></i><br />
+            12°C
+        </div>
+        <div class="col-2">
+            Friday <br />
+            🌩 <br />13°C
+        </div>
+    </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
